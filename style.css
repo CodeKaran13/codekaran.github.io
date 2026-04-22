@@ -1,0 +1,70 @@
+body {
+  background: #020617;
+  color: #e5e7eb;
+  font-family: 'Press Start 2P', monospace;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  color: #3b82f6;
+}
+
+.hero .sub {
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 80px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #22c55e;
+}
+
+/* MENU STYLE */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-item {
+  padding: 15px;
+  border: 2px solid #1e293b;
+  text-decoration: none;
+  color: #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+  background: #3b82f6;
+  color: #020617;
+  transform: translateX(5px);
+}
+
+/* STATS */
+.stats {
+  list-style: none;
+  padding: 0;
+}
+
+.stats li {
+  margin-bottom: 10px;
+}
