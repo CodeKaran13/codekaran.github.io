@@ -4,65 +4,104 @@
 <meta charset="UTF-8">
 <title>CodeKaran | Game Developer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#shipped">Shipped Titles</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-  <!-- HERO -->
-  <section id="hero" class="screen active">
-    <h1>CODEKARAN</h1>
-    <p>Lead Game Developer</p>
-    <p class="sub">[ Unity | Unreal | Multiplayer Systems ]</p>
+<!-- HERO -->
+<section class="hero">
+  <h1>CODEKARAN</h1>
+  <p class="subtitle">Lead Game Developer</p>
+  <p class="sub">Unity • Unreal • Multiplayer Systems</p>
+</section>
 
-    <div class="menu">
-      <div class="menu-item" onclick="showScreen('projects')">> PROJECTS</div>
-      <div class="menu-item" onclick="showScreen('about')">> ABOUT</div>
-      <div class="menu-item" onclick="showScreen('contact')">> CONTACT</div>
-    </div>
-  </section>
+<!-- ABOUT -->
+<section id="about">
+  <h2>ABOUT</h2>
+  <p>
+    I design and ship high-performance gameplay systems for mobile and PC, combining strong architecture, player-centric design, and production-ready execution.
+  </p>
+</section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="screen">
-    <h2>PROJECTS</h2>
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>EXPERIENCE</h2>
+  <p>8+ years building mobile and multiplayer games using Unity and Unreal Engine.</p>
+</section>
 
-    <div class="card">EcoRun — Scalable Endless Runner</div>
-    <div class="card">Yaaro Ki Rasoi — UE5 Simulation</div>
-    <div class="card">BullBash — RTS Multiplayer</div>
-    <div class="card">Tank Shooter — 4v4 Multiplayer</div>
+<!-- EDUCATION -->
+<section id="education">
+  <h2>EDUCATION</h2>
+  <p>Your education details here.</p>
+</section>
 
-    <button onclick="showScreen('hero')">← BACK</button>
-  </section>
+<!-- SHIPPED -->
+<section id="shipped">
+  <h2>SHIPPED TITLES</h2>
+  <ul>
+    <li>EcoRun</li>
+    <li>Yaaro Ki Rasoi</li>
+    <li>BullBash</li>
+    <li>Tank Shooter</li>
+  </ul>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about" class="screen">
-    <h2>ABOUT</h2>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>PROJECTS</h2>
 
-    <p>
-      I design and ship high-performance gameplay systems for mobile and PC—combining strong architecture, player-centric design, and production-ready execution.
-    </p>
+  <div class="card" onclick="openProject('ecorun')">
+    EcoRun — Scalable Endless Runner
+  </div>
 
-    <p>
-      My focus is on multiplayer systems, gameplay architecture, and scalable design.
-    </p>
+  <div class="card" onclick="openProject('yaaro')">
+    Yaaro Ki Rasoi — UE5 Simulation
+  </div>
 
-    <button onclick="showScreen('hero')">← BACK</button>
-  </section>
+  <div class="card" onclick="openProject('bullbash')">
+    BullBash — RTS Multiplayer
+  </div>
 
-  <!-- CONTACT -->
-  <section id="contact" class="screen">
-    <h2>CONTACT</h2>
+  <div class="card" onclick="openProject('tank')">
+    Tank Shooter — 4v4 Multiplayer
+  </div>
+</section>
 
-    <p>Email: hello@codekarangames.dev</p>
+<!-- SKILLS -->
+<section id="skills">
+  <h2>SKILLS</h2>
+  <ul>
+    <li>Gameplay Architecture</li>
+    <li>Multiplayer Systems</li>
+    <li>Performance Optimization</li>
+    <li>Live Game Systems</li>
+  </ul>
+</section>
 
-    <button onclick="showScreen('hero')">← BACK</button>
-  </section>
-
-</div>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>CONTACT</h2>
+  <p>Email: hello@codekarangames.dev</p>
+</section>
 
 <script src="script.js"></script>
+
 </body>
 </html>
