@@ -46,3 +46,9 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll(".fade-in").forEach(section => {
   observer.observe(section);
 });
+
+document.querySelectorAll(".card").forEach((card, index) => {
+  setTimeout(() => {
+    card.classList.add("visible");
+  }, index * 100);
+});
