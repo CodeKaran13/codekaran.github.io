@@ -1,74 +1,94 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
 body {
   background: #020617;
   color: #e5e7eb;
-  font-family: 'Press Start 2P', monospace;
+  font-family: 'VT323', monospace;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px;
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #020617;
+  border-bottom: 2px solid #1e293b;
+  z-index: 1000;
 }
 
-.screen {
-  display: block;
-  margin-bottom: 80px;
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px;
+  flex-wrap: wrap;
 }
 
-.screen.active {
-  display: block;
+.navbar a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  color: #3b82f6;
 }
 
 /* HERO */
-h1 {
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-family: 'Press Start 2P', cursive;
   font-size: 32px;
   color: #3b82f6;
 }
 
+.subtitle {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
 .sub {
   color: #94a3b8;
-  margin-bottom: 40px;
 }
 
-/* MENU */
-.menu {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* HEADINGS */
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #22c55e;
 }
 
-.menu-item {
-  cursor: pointer;
-  padding: 10px;
-  border: 2px solid #1e293b;
-  transition: 0.2s;
-}
-
-.menu-item:hover {
-  background: #3b82f6;
-  color: #020617;
-  transform: translateX(8px);
+/* SECTIONS */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
 }
 
 /* CARDS */
 .card {
   border: 2px solid #1e293b;
-  padding: 15px;
+  padding: 20px;
   margin-bottom: 15px;
-}
-
-/* BUTTON */
-button {
-  margin-top: 20px;
-  padding: 10px;
-  background: none;
-  color: #e5e7eb;
-  border: 2px solid #1e293b;
   cursor: pointer;
+  transition: 0.2s;
 }
 
-button:hover {
-  background: #22c55e;
+.card:hover {
+  background: #3b82f6;
   color: #020617;
+  transform: translateX(8px);
+}
+
+/* LISTS */
+ul {
+  padding-left: 20px;
 }
