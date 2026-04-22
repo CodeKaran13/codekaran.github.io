@@ -12,7 +12,8 @@ body {
 }
 
 .screen {
-  display: none;
+  display: block;
+  margin-bottom: 80px;
 }
 
 .screen.active {
