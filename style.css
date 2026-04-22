@@ -156,3 +156,24 @@ ul {
   background: var(--accent);
   color: #020617;
 }
+
+/*ANIMATION BASE*/
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+/* Visible state */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
