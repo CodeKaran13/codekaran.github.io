@@ -11,7 +11,6 @@ function openProject(project)
   window.open(links[project], "_blank");
 }
 
-// ACTIVE NAV HIGHLIGHT
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".navbar a");
 
@@ -21,8 +20,9 @@ window.addEventListener("scroll", () =>
 
   sections.forEach(section =>
   {
-    const sectionTop = section.offsetTop - 120;
-    if (scrollY >= sectionTop)
+    const sectionTop = section.offsetTop - 150;
+
+    if (window.scrollY >= sectionTop)
     {
       current = section.getAttribute("id");
     }
@@ -30,10 +30,15 @@ window.addEventListener("scroll", () =>
 
   navLinks.forEach(link =>
   {
-    link.style.color = "#e5e7eb";
+    // Remove active class from all links
+    link.classList.remove("active");
+  });
+
+  navLinks.forEach(link =>
+  {
     if (link.getAttribute("href") === "#" + current)
     {
-      link.style.color = "#22c55e";
+      link.classList.add("active");
     }
   });
 });

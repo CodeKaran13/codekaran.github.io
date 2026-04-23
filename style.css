@@ -133,6 +133,14 @@ p {
   width: 100%;
 }
 
+.nav-blue.active {
+  color: #3b82f6;
+}
+
+.nav-blue.active::after {
+  width: 100%;
+}
+
 /* GREEN */
 .nav-green:hover {
   color: #22c55e;
@@ -143,6 +151,14 @@ p {
 }
 
 .nav-green:hover::after {
+  width: 100%;
+}
+
+.nav-green.active {
+  color: #22c55e;
+}
+
+.nav-green.active::after {
   width: 100%;
 }
 
@@ -159,6 +175,14 @@ p {
   width: 100%;
 }
 
+.nav-purple.active {
+  color: #a855f7;
+}
+
+.nav-purple.active::after {
+  width: 100%;
+}
+
 /* CYAN */
 .nav-cyan:hover {
   color: #06b6d4;
@@ -172,6 +196,14 @@ p {
   width: 100%;
 }
 
+.nav-cyan.active {
+  color: #06b6d4;
+}
+
+.nav-cyan.active::after {
+  width: 100%;
+}
+
 /* ORANGE */
 .nav-orange:hover {
   color: #f97316;
@@ -182,6 +214,14 @@ p {
 }
 
 .nav-orange:hover::after {
+  width: 100%;
+}
+
+.nav-orange.active {
+  color: #f97316;
+}
+
+.nav-orange.active::after {
   width: 100%;
 }
 
