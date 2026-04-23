@@ -25,6 +25,13 @@
   margin-bottom: 16px;
 }
 
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 30px;
+}
+
 body {
   background:
     radial-gradient(circle at top left, rgba(59,130,246,0.08), transparent 30%),
