@@ -36,6 +36,20 @@ p {
   line-height: 1.6;
 }
 
+.highlight-line {
+  margin-top: 40px;
+  padding: 20px 24px;
+
+  border-left: 4px solid var(--accent);
+  background: rgba(59, 130, 246, 0.04);
+
+  font-size: 22px;
+  line-height: 1.6;
+  color: var(--text);
+
+  border-radius: 8px;
+}
+
 /* NAVBAR */
 .navbar {
   position: sticky;
